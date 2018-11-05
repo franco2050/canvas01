@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var x = 5;
+        function a() {
+            var c = document.getElementById("cnvs").getContext("2d");
+            //c.moveTo(50, 12);
+            //c.lineTo(0, 0);
+            //c.lineTo(40, 70);
+            ////c.lineTo(50, 12);
+            //c.closePath();
+            //c.rect(70, 80, 100, 30);
+            //c.lineWidth = 3;
+            //c.strokeStyle = "magenta";
+            //c.fillStyle = "yellow";
+
+            //c.arc(130, 40, 30, 0, 2*Math.PI, true);
+
+            //c.font = "30px arial";
+            //c.strokeText("hello", 20, 30);
+            //c.fillText("hello", 20, 30);
+
+
+
+            //c.stroke();
+          // c.fill();
+
+
+            /*var i = new Image();
+            i.src = "a.jpg";
+            i.onload = function () {
+                c.drawImage(i,x,30,50,60)
+            }
+            x = x + 7;
+            c.clearRect(0, 0, 300, 300);
+            setTimeout(a, 100);*/
+        }
+        function b() {
+            var c = document.getElementById("cnvs").getContext("2d");
+            c.clearRect(0, 0, 30, 40);
+        }
+    </script>
+</head>
+<body onload="a()">
+    <input id="Button1" type="button" value="button" onclick="b()"/>
+    <canvas style="border:1px solid black;width:300px;height:200px;" id="cnvs"></canvas>
+</body>
+</html>
